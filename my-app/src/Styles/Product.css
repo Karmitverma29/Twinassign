@@ -1,0 +1,118 @@
+/* default styles */
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.product-list-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  margin-right: 20px;
+}
+
+.category-filter {
+  margin-right: 20px;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort-buttons button {
+  background-color: #84c225;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-buttons button:hover {
+  background-color: #bee189;
+}
+
+.product-list-table {
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-list-table .MuiDataGrid-columnsContainer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-list {
+    padding: 10px;
+  }
+  
+  .product-list-controls {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .search {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .category-filter {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .sort-buttons {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .sort-buttons button {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .product-list {
+    padding: 5px;
+  }
+  
+  .product-list-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .search {
+    margin-bottom: 10px;
+  }
+  
+  .category-filter {
+    margin-bottom: 10px;
+  }
+  
+  .sort-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .sort-buttons button {
+    margin-left: 0;
+    margin-right: 5px;
+    padding: 5px;
+  }
+}
